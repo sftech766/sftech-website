@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Human-AI Workflow Services | SFTech</title>
+
+  <link rel="icon" type="image/png" href="brand_assets/assets/icon-main.png">
+
+  <meta name="description" content="Human-AI Workflow Services: done-for-you content, research, funnel assets, and recurring support. AI drafts it, a human reviews it before you see it.">
+  <meta property="og:title" content="Human-AI Workflow Services | SFTech">
+  <meta property="og:description" content="The work gets done, with a human reviewing it before you see it.">
+  <meta property="og:image" content="https://sftech.co.in/brand_assets/assets/logo-main.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sftech.co.in/workflow-services.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://sftech.co.in/workflow-services.html" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Human-AI Workflow Services (Done-For-You)",
+    "provider": { "@type": "ProfessionalService", "name": "SteadyFrame Technologies" },
+    "description": "AI-plus-human execution layer for content repurposing, research briefs, funnel assets, and recurring workflow support.",
+    "offers": [
+      { "@type": "Offer", "name": "Small one-time task or research brief", "priceRange": "$150-$400" },
+      { "@type": "Offer", "name": "Focused workflow pilot", "priceRange": "$400-$1000" },
+      { "@type": "Offer", "name": "Monthly recurring support", "priceRange": "$500-$1500 per month" },
+      { "@type": "Offer", "name": "Larger setup or multi-workflow system", "priceRange": "$1500-$3000+" }
+    ]
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { graphite: '#14181F', slate: '#3A4552', brass: '#B8894D', bronze: '#8A6435', bone: '#F7F5F1', teal: '#4E8C8A' },
+          fontFamily: { display: ['Fraunces', 'serif'], body: ['Inter', 'sans-serif'] },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { background-color: #F7F5F1; font-family: 'Inter', sans-serif; color: #14181F; margin: 0; overflow-x: hidden; }
+    .grain { position: relative; }
+    .grain::after {
+      content: ''; position: absolute; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+      pointer-events: none; z-index: 1;
+    }
+    .shadow-graphite { box-shadow: 0 2px 10px rgba(20,24,31,0.10), 0 12px 32px rgba(20,24,31,0.08); }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s cubic-bezier(0.22,1,0.36,1), transform 0.7s cubic-bezier(0.22,1,0.36,1); }
+    .reveal.is-visible { opacity: 1; transform: translateY(0); }
+    .eyebrow { font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: #8A6435; font-weight: 600; }
+    .eyebrow-dark { color: #B8894D; }
+    .rule { height: 1px; background: linear-gradient(to right, rgba(20,24,31,0.14), rgba(20,24,31,0.02)); }
+    a:focus-visible, button:focus-visible { outline: 2px solid #B8894D; outline-offset: 3px; border-radius: 2px; }
+    .nav-link { position: relative; }
+    .nav-link::after { content: ''; position: absolute; left: 0; bottom: -4px; width: 0; height: 1px; background: #B8894D; transition: width 0.28s cubic-bezier(0.22,1,0.36,1); }
+    .nav-link:hover::after { width: 100%; }
+    .btn-primary { background: #14181F; color: #F7F5F1; transition: transform 0.24s cubic-bezier(0.22,1,0.36,1), background 0.24s ease; }
+    .btn-primary:hover { background: #232934; transform: translateY(-2px); }
+    .btn-primary:active { transform: translateY(0); }
+    .service-row { border-bottom: 1px solid rgba(20,24,31,0.08); }
+    .price-row { border-bottom: 1px solid rgba(20,24,31,0.10); }
+    .proof-card { background: #FFFFFF; border: 1px solid rgba(184,137,77,0.25); border-radius: 4px; }
+  </style>
+</head>
+<body class="grain">
+
+  <header class="sticky top-0 z-50 bg-bone/95 backdrop-blur border-b border-graphite/8">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+      <a href="index.html" class="flex items-center gap-2">
+        <img src="brand_assets/assets/icon-main.png" alt="SFTech" class="h-8 w-8 rounded-sm">
+        <span class="font-display font-semibold text-lg tracking-tight text-graphite">SFTech</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 font-body text-sm text-graphite">
+        <a href="thinking-partner.html" class="nav-link">AI Thinking Partner</a>
+        <a href="workflow-services.html" class="nav-link text-bronze">Workflow Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <a href="https://calendar.app.google/PreoYa98qoiVXfL38" target="_blank" rel="noopener" class="btn-primary text-sm font-medium px-5 py-2.5 rounded-sm">Book a Diagnostic Call</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="max-w-6xl mx-auto px-6 pt-20 pb-16 md:pt-28 md:pb-20">
+    <p class="eyebrow reveal">Track Two</p>
+    <h1 class="font-display font-semibold text-4xl md:text-5xl leading-[1.1] tracking-tight text-graphite mt-4 max-w-3xl reveal">
+      The work gets done, with a human reviewing it before you see it.
+    </h1>
+    <p class="font-body text-lg md:text-xl text-slate leading-relaxed mt-6 max-w-2xl reveal">
+      Human-AI Workflow Services is the done-for-you layer. AI drafts it for speed. A human handles context, judgment, editing, and packaging, so you get a finished result, not a rough draft you still have to fix.
+    </p>
+    <a href="https://calendar.app.google/PreoYa98qoiVXfL38" target="_blank" rel="noopener" class="btn-primary inline-block font-medium px-7 py-3.5 rounded-sm mt-8 shadow-graphite">Book a Free Diagnostic Call</a>
+  </section>
+
+  <!-- HOW DELIVERY WORKS -->
+  <section class="bg-graphite text-bone">
+    <div class="max-w-6xl mx-auto px-6 py-16 md:py-20 grid md:grid-cols-12 gap-10">
+      <div class="md:col-span-4 reveal">
+        <p class="eyebrow eyebrow-dark">How Delivery Works</p>
+      </div>
+      <div class="md:col-span-7 md:col-start-6 reveal">
+        <p class="font-body text-bone/80 text-lg leading-[1.75]">
+          You explain the goal once. We use AI for speed and leverage, and a human handles the parts AI can't: matching your voice, catching what's wrong, making judgment calls, and packaging the output so it's ready to use. You don't manage tools, prompts, or quality checks. We do.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE CAN TAKE OFF YOUR PLATE -->
+  <section class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+    <p class="eyebrow reveal">What We Can Take Off Your Plate</p>
+    <h2 class="font-display font-semibold text-3xl md:text-4xl text-graphite mt-4 mb-14 reveal">Ten kinds of workflow work, one delivery model.</h2>
+    <div class="space-y-0">
+      <div class="service-row py-6 grid md:grid-cols-12 gap-4 reveal">
+        <h3 class="font-display font-semibold text-lg text-graphite md:col-span-4">Content Repurposing</h3>
+        <p class="font-body text-slate leading-relaxed md:col-span-8">Turn podcasts, interviews, webinars, or long videos into short clip ideas, quote pulls, captions, titles, and a repurposing plan.</p>
+      </div>
+      <div class="service-row py-6 grid md:grid-cols-12 gap-4 reveal">
+        <h3 class="font-display font-semibold text-lg text-graphite md:col-span-4">Social Media Structure and Post Creation</h3>
+        <p class="font-body text-slate leading-relaxed md:col-span-8">A repeatable posting rhythm, content pillars, weekly calendar, and drafted posts in your voice.</p>
+      </div>
+      <div class="service-row py-6 grid md:grid-cols-12 gap-4 reveal">
+        <h3 class="font-display font-semibold text-lg text-graphite md:col-span-4">Research Briefs</h3>
+        <p class="font-body text-slate leading-relaxed md:col-span-8">Deep research on mentors, clients, partners, prospects, or collaborators, with background, recent work, and outreach angles.</p>
+      </div>
+      <div class="service-row py-6 grid md:grid-cols-12 gap-4 reveal">
+        <h3 class="font-display font-semibold text-lg text-graphite md:col-span-4">Website Funnel and GEO Improvement</h3>
+        <p class="font-body text-slate leading-relaxed md:col-span-8">Evolve your site from SEO-only to AI-search and answer-engine aware, with clearer service pages and stronger direct answers.</p>
+      </div>
+      <div class="service-row py-6 grid md:grid-cols-12 gap-4 reveal">
+        <h3 class="font-display font-semibold text-lg text-graphite md:col-span-4">Post and Content Performance Review</h3>
+        <p class="font-body text-slate leading-relaxed md:col-span-8">A look at what's working, what's aligned with your voice, and what's worth testing next.</p>
+      </div>
+      <div class="service-row py-6 grid md:grid-cols-12 gap-4 reveal">
+        <h3 class="font-display font-semibold text-lg text-graphite md:col-span-4">Voice-Aligned Content Suggestions</h3>
+        <p class="font-body text-slate leading-relaxed md:col-span-8">Posts, articles, newsletters, or short-form content that sound like you while improving reach and clarity.</p>
+      </div>
+      <div class="service-row py-6 grid md:grid-cols-12 gap-4 reveal">
+        <h3 class="font-display font-semibold text-lg text-graphite md:col-span-4">Free Giveaways and Funnel Assets</h3>
+        <p class="font-body text-slate leading-relaxed md:col-span-8">Checklists, mini-guides, and lead magnets built from your existing worksheets, frameworks, and talks.</p>
+      </div>
+      <div class="service-row py-6 grid md:grid-cols-12 gap-4 reveal">
+        <h3 class="font-display font-semibold text-lg text-graphite md:col-span-4">Client or Audience Research</h3>
+        <p class="font-body text-slate leading-relaxed md:col-span-8">Audience needs, common questions, objections, and competitor messaging, turned into content angles.</p>
+      </div>
+      <div class="service-row py-6 grid md:grid-cols-12 gap-4 reveal">
+        <h3 class="font-display font-semibold text-lg text-graphite md:col-span-4">Recurring Admin, Research, or Content Support</h3>
+        <p class="font-body text-slate leading-relaxed md:col-span-8">Ongoing help with summaries, reports, content calendars, outreach prep, and documentation.</p>
+      </div>
+      <div class="service-row py-6 grid md:grid-cols-12 gap-4 reveal">
+        <h3 class="font-display font-semibold text-lg text-graphite md:col-span-4">Professional Workflow Support</h3>
+        <p class="font-body text-slate leading-relaxed md:col-span-8">Recurring help with research, drafts, summaries, and reporting for work-related processes.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-6xl mx-auto px-6"><div class="rule"></div></div>
+
+  <!-- PROOF -->
+  <section class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+    <p class="eyebrow reveal">Proof</p>
+    <h2 class="font-display font-semibold text-3xl md:text-4xl text-graphite mt-4 mb-14 reveal">We build real systems, not just plans.</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="proof-card p-8 reveal">
+        <p class="eyebrow">Owned Venture</p>
+        <h3 class="font-display font-semibold text-xl text-graphite mt-3">EstateFlow AI</h3>
+        <p class="font-body text-slate leading-relaxed mt-4">
+          A live example of what we build: an AI-powered platform we operate for real estate agents, handling lead management and follow-up automation so agents spend less time on busy work and more time closing deals. It's our own venture, and it's in active use today.
+        </p>
+      </div>
+      <div class="proof-card p-8 reveal">
+        <p class="eyebrow">Ongoing Client Work</p>
+        <h3 class="font-display font-semibold text-xl text-graphite mt-3">Recurring Research Concierge</h3>
+        <p class="font-body text-slate leading-relaxed mt-4">
+          We also run ongoing recurring research work for a private client, building structured relationship-research reports on a monthly cadence. Details of that engagement stay confidential to the client, but it's a working example of the same human-AI delivery model applied to a completely different kind of workflow.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-6xl mx-auto px-6"><div class="rule"></div></div>
+
+  <!-- PRICING -->
+  <section class="max-w-4xl mx-auto px-6 py-20 md:py-28">
+    <p class="eyebrow reveal">Pricing</p>
+    <h2 class="font-display font-semibold text-3xl md:text-4xl text-graphite mt-4 mb-12 reveal">Start small. Scale once it's proven useful.</h2>
+    <div class="space-y-0 reveal">
+      <div class="price-row flex flex-col md:flex-row justify-between md:items-baseline py-5">
+        <span class="font-display font-medium text-lg text-graphite">Small one-time task or research brief</span>
+        <span class="font-body text-slate font-semibold">$150 – $400</span>
+      </div>
+      <div class="price-row flex flex-col md:flex-row justify-between md:items-baseline py-5">
+        <span class="font-display font-medium text-lg text-graphite">Focused workflow pilot</span>
+        <span class="font-body text-slate font-semibold">$400 – $1,000</span>
+      </div>
+      <div class="price-row flex flex-col md:flex-row justify-between md:items-baseline py-5">
+        <span class="font-display font-medium text-lg text-graphite">Monthly recurring support</span>
+        <span class="font-body text-slate font-semibold">$500 – $1,500/month</span>
+      </div>
+      <div class="price-row flex flex-col md:flex-row justify-between md:items-baseline py-5">
+        <span class="font-display font-medium text-lg text-graphite">Larger setup or multi-workflow system</span>
+        <span class="font-body text-slate font-semibold">$1,500 – $3,000+</span>
+      </div>
+    </div>
+    <p class="font-body text-slate text-sm mt-8 italic">Prices shown are before applicable taxes. If 18% tax applies, it's added separately on the invoice.</p>
+    <p class="font-body text-slate text-sm mt-2 italic">Early partners receive 75% of the standard rate for their agreed package, locked in as long as they continue using the service without interruption.</p>
+    <a href="https://calendar.app.google/PreoYa98qoiVXfL38" target="_blank" rel="noopener" class="btn-primary inline-block font-medium px-7 py-3.5 rounded-sm mt-10 shadow-graphite">Book a Free Diagnostic Call</a>
+  </section>
+
+  <footer class="bg-graphite text-bone/70">
+    <div class="max-w-6xl mx-auto px-6 py-14">
+      <div class="flex flex-col md:flex-row justify-between gap-10">
+        <div>
+          <div class="flex items-center gap-2">
+            <img src="brand_assets/assets/icon-dark.png" alt="SFTech" class="h-8 w-8 rounded-sm">
+            <span class="font-display font-semibold text-lg text-bone">SFTech</span>
+          </div>
+          <p class="font-body text-sm mt-4 max-w-xs">Your Steady Partner in Human-AI Thinking and Execution.</p>
+        </div>
+        <div class="flex flex-wrap gap-x-12 gap-y-4 font-body text-sm">
+          <a href="thinking-partner.html" class="hover:text-brass transition-colors">AI Thinking Partner</a>
+          <a href="workflow-services.html" class="hover:text-brass transition-colors">Workflow Services</a>
+          <a href="about.html" class="hover:text-brass transition-colors">About</a>
+          <a href="contact.html" class="hover:text-brass transition-colors">Contact</a>
+        </div>
+      </div>
+      <div class="rule my-10" style="background: linear-gradient(to right, rgba(247,245,241,0.14), rgba(247,245,241,0.02));"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 font-body text-sm text-bone/50">
+        <p>© 2026 SteadyFrame Technologies. All rights reserved.</p>
+        <p>Know someone who'd benefit from this? Feel free to introduce them.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const revealEls = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) { setTimeout(() => entry.target.classList.add('is-visible'), i * 40); io.unobserve(entry.target); }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => io.observe(el));
+  </script>
+</body>
+</html>

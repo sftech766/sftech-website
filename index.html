@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SFTech — Your Steady Partner in Human-AI Thinking and Execution</title>
+
+  <link rel="icon" type="image/png" href="brand_assets/assets/icon-main.png">
+
+  <meta name="description" content="SFTech helps people and small teams find where AI is actually worth using, then thinks it through with you or does the work, human-reviewed. Start with a free diagnostic call.">
+  <meta property="og:title" content="SFTech — Your Steady Partner in Human-AI Thinking and Execution">
+  <meta property="og:description" content="AI Thinking Partner strategy work, or done-for-you Human-AI Workflow Services. Human-reviewed, warm-referral only, no hype.">
+  <meta property="og:image" content="https://sftech.co.in/brand_assets/assets/logo-main.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sftech.co.in/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SFTech — Your Steady Partner in Human-AI Thinking and Execution">
+  <meta name="twitter:description" content="AI Thinking Partner strategy work, or done-for-you Human-AI Workflow Services. Human-reviewed, warm-referral only, no hype.">
+  <link rel="canonical" href="https://sftech.co.in/" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "SteadyFrame Technologies",
+    "alternateName": "SFTech",
+    "url": "https://sftech.co.in/",
+    "logo": "https://sftech.co.in/brand_assets/assets/logo-main.png",
+    "description": "Human-AI hybrid advisory and execution service: AI Thinking Partner strategy audits and Human-AI Workflow Services done-for-you delivery.",
+    "email": "sftech766@gmail.com",
+    "makesOffer": [
+      { "@type": "Offer", "name": "Free AI Workflow Diagnostic Call", "url": "https://calendar.app.google/PreoYa98qoiVXfL38" },
+      { "@type": "Offer", "name": "AI Thinking Partner" },
+      { "@type": "Offer", "name": "Human-AI Workflow Services" }
+    ]
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            graphite: '#14181F',
+            slate:    '#3A4552',
+            brass:    '#B8894D',
+            bronze:   '#8A6435',
+            bone:     '#F7F5F1',
+            teal:     '#4E8C8A',
+          },
+          fontFamily: {
+            display: ['Fraunces', 'serif'],
+            body:    ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: #F7F5F1;
+      font-family: 'Inter', sans-serif;
+      color: #14181F;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    /* ── Paper grain texture ── */
+    .grain { position: relative; }
+    .grain::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* ── Warm-tinted layered shadows ── */
+    .shadow-brass {
+      box-shadow:
+        0 2px 8px rgba(184,137,77,0.16),
+        0 8px 28px rgba(184,137,77,0.10),
+        0 20px 56px rgba(20,24,31,0.06);
+    }
+    .shadow-graphite {
+      box-shadow:
+        0 2px 10px rgba(20,24,31,0.10),
+        0 12px 32px rgba(20,24,31,0.08);
+    }
+
+    /* ── Keyframes ── */
+    @keyframes fade-up {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fade-in {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    .anim-fade-up    { animation: fade-up 0.7s cubic-bezier(0.22,1,0.36,1) both; }
+    .anim-fade-up-d1 { animation: fade-up 0.7s 0.12s cubic-bezier(0.22,1,0.36,1) both; }
+    .anim-fade-up-d2 { animation: fade-up 0.7s 0.24s cubic-bezier(0.22,1,0.36,1) both; }
+    .anim-fade-up-d3 { animation: fade-up 0.7s 0.36s cubic-bezier(0.22,1,0.36,1) both; }
+
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s cubic-bezier(0.22,1,0.36,1), transform 0.7s cubic-bezier(0.22,1,0.36,1); }
+    .reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+    /* ── Eyebrow label ── */
+    /* Default: deep bronze for AA contrast on light/bone backgrounds (4.9:1). */
+    .eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #8A6435;
+      font-weight: 600;
+    }
+    /* On dark (graphite) backgrounds, the lighter brass reads at 5.7:1 and is used instead. */
+    .eyebrow-dark { color: #B8894D; }
+
+    /* ── Rule divider ── */
+    .rule { height: 1px; background: linear-gradient(to right, rgba(20,24,31,0.14), rgba(20,24,31,0.02)); }
+
+    /* ── Focus-visible ── */
+    a:focus-visible, button:focus-visible {
+      outline: 2px solid #B8894D;
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    /* ── Nav link underline ── */
+    .nav-link { position: relative; }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0; bottom: -4px;
+      width: 0; height: 1px;
+      background: #B8894D;
+      transition: width 0.28s cubic-bezier(0.22,1,0.36,1);
+    }
+    .nav-link:hover::after { width: 100%; }
+
+    /* ── Card ── */
+    .door-card {
+      background: #FFFFFF;
+      border: 1px solid rgba(20,24,31,0.08);
+      border-radius: 4px;
+      transition: transform 0.3s cubic-bezier(0.22,1,0.36,1), box-shadow 0.3s cubic-bezier(0.22,1,0.36,1), border-color 0.3s ease;
+    }
+    .door-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(184,137,77,0.35);
+    }
+
+    /* ── Primary CTA button ── */
+    .btn-primary {
+      background: #14181F;
+      color: #F7F5F1;
+      transition: transform 0.24s cubic-bezier(0.22,1,0.36,1), box-shadow 0.24s cubic-bezier(0.22,1,0.36,1), background 0.24s ease;
+    }
+    .btn-primary:hover {
+      background: #23293480;
+      background: #232934;
+      transform: translateY(-2px);
+    }
+    .btn-primary:active { transform: translateY(0); }
+
+    .btn-secondary {
+      border: 1px solid #14181F;
+      color: #14181F;
+      transition: background 0.24s ease, color 0.24s ease;
+    }
+    .btn-secondary:hover {
+      background: #14181F;
+      color: #F7F5F1;
+    }
+  </style>
+</head>
+<body class="grain">
+
+  <!-- ───────── NAV ───────── -->
+  <header class="sticky top-0 z-50 bg-bone/95 backdrop-blur border-b border-graphite/8">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+      <a href="index.html" class="flex items-center gap-2">
+        <img src="brand_assets/assets/icon-main.png" alt="SFTech" class="h-8 w-8 rounded-sm">
+        <span class="font-display font-semibold text-lg tracking-tight text-graphite">SFTech</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 font-body text-sm text-graphite">
+        <a href="thinking-partner.html" class="nav-link">AI Thinking Partner</a>
+        <a href="workflow-services.html" class="nav-link">Workflow Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <a href="https://calendar.app.google/PreoYa98qoiVXfL38" target="_blank" rel="noopener" class="btn-primary text-sm font-medium px-5 py-2.5 rounded-sm">Book a Diagnostic Call</a>
+    </nav>
+  </header>
+
+  <!-- ───────── HERO ───────── -->
+  <section class="max-w-6xl mx-auto px-6 pt-20 pb-24 md:pt-28 md:pb-32">
+    <p class="eyebrow reveal">SteadyFrame Technologies</p>
+    <h1 class="font-display font-semibold text-4xl md:text-6xl leading-[1.05] tracking-tight text-graphite mt-4 max-w-3xl reveal">
+      Your Steady Partner in Human-AI Thinking and Execution.
+    </h1>
+    <p class="font-body text-lg md:text-xl text-slate leading-relaxed mt-6 max-w-2xl reveal">
+      We help people and small teams find where AI is actually worth using in their work, then either think it through with you or do the work for you, with a human reviewing everything before you see it.
+    </p>
+    <div class="flex flex-wrap items-center gap-5 mt-10 reveal">
+      <a href="https://calendar.app.google/PreoYa98qoiVXfL38" target="_blank" rel="noopener" class="btn-primary font-medium px-7 py-3.5 rounded-sm shadow-graphite">Book a Free Diagnostic Call</a>
+      <a href="#how-we-work" class="font-medium text-graphite border-b border-bronze pb-0.5 hover:text-bronze transition-colors">See how we work</a>
+    </div>
+  </section>
+
+  <!-- ───────── LAST 20% ───────── -->
+  <section id="last-20" class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+    <div class="grid md:grid-cols-12 gap-10 md:gap-16">
+      <div class="md:col-span-4 reveal">
+        <p class="eyebrow">The Last 20%</p>
+        <h2 class="font-display font-semibold text-3xl md:text-4xl leading-tight text-graphite mt-4">
+          AI gets you 80% there. The last 20% is where it gets expensive.
+        </h2>
+      </div>
+      <div class="md:col-span-7 md:col-start-6 reveal">
+        <p class="font-body text-slate leading-[1.75] text-lg">
+          AI can draft a report, a post, a proposal, a plan, fast. What it can't do on its own is match your voice, catch the details that matter, make the judgment calls only you can make, and package the result so it's actually ready to use.
+        </p>
+        <p class="font-body text-slate leading-[1.75] text-lg mt-5">
+          That last 20%, the context, the correction, the polish, is where most people end up spending hours anyway. Sometimes it ends with "maybe I should have just done this myself."
+        </p>
+        <p class="font-body text-graphite leading-[1.75] text-lg mt-5 font-medium">
+          SFTech is built around closing that gap. AI handles speed and leverage. A human handles judgment, quality control, and the final result. You explain the goal once. We handle the rest.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-6xl mx-auto px-6"><div class="rule"></div></div>
+
+  <!-- ───────── TWO DOORS ───────── -->
+  <section id="how-we-work" class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+    <p class="eyebrow reveal">Two Doors</p>
+    <h2 class="font-display font-semibold text-3xl md:text-4xl text-graphite mt-4 mb-14 reveal">Two ways to work with us.</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="door-card p-10 reveal">
+        <p class="eyebrow">Door One</p>
+        <h3 class="font-display font-semibold text-2xl text-graphite mt-3">AI Thinking Partner</h3>
+        <p class="font-body text-slate leading-relaxed mt-4">
+          Not sure what's actually worth improving with AI? Start here. We audit your workflows, tell you what's worth automating, what should stay human, and what to try first, ranked by return and risk. No obligation to buy execution afterward.
+        </p>
+        <p class="font-body text-sm text-bronze font-medium mt-6">Right for you if you want clarity before you commit to anything.</p>
+        <a href="thinking-partner.html" class="inline-block mt-6 font-medium text-graphite border-b border-bronze pb-0.5 hover:text-bronze transition-colors">Explore AI Thinking Partner →</a>
+      </div>
+      <div class="door-card p-10 reveal">
+        <p class="eyebrow">Door Two</p>
+        <h3 class="font-display font-semibold text-2xl text-graphite mt-3">Human-AI Workflow Services</h3>
+        <p class="font-body text-slate leading-relaxed mt-4">
+          Already know what needs doing? We do the work; content, research, funnel assets, recurring admin, with AI for speed and a human reviewing every deliverable before it reaches you.
+        </p>
+        <p class="font-body text-sm text-bronze font-medium mt-6">Right for you if you want the work done, not another tool to manage.</p>
+        <a href="workflow-services.html" class="inline-block mt-6 font-medium text-graphite border-b border-bronze pb-0.5 hover:text-bronze transition-colors">Explore Workflow Services →</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-6xl mx-auto px-6"><div class="rule"></div></div>
+
+  <!-- ───────── HOW WE START ───────── -->
+  <section class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+    <p class="eyebrow reveal">How We Start</p>
+    <h2 class="font-display font-semibold text-3xl md:text-4xl text-graphite mt-4 mb-16 reveal">Five steps, starting free.</h2>
+    <div class="space-y-12">
+      <div class="flex gap-8 reveal">
+        <span class="font-display font-semibold text-4xl text-bronze w-12 shrink-0">01</span>
+        <div>
+          <h3 class="font-display font-semibold text-xl text-graphite">Free AI Workflow Diagnostic Call</h3>
+          <p class="font-body text-slate mt-2 leading-relaxed max-w-2xl">30 to 60 minutes. We learn your workflow, your goals, and where the bottlenecks are.</p>
+        </div>
+      </div>
+      <div class="flex gap-8 reveal">
+        <span class="font-display font-semibold text-4xl text-bronze w-12 shrink-0">02</span>
+        <div>
+          <h3 class="font-display font-semibold text-xl text-graphite">AI Opportunity Map</h3>
+          <p class="font-body text-slate mt-2 leading-relaxed max-w-2xl">A short, prioritized list of what's worth doing, what isn't, and why.</p>
+        </div>
+      </div>
+      <div class="flex gap-8 reveal">
+        <span class="font-display font-semibold text-4xl text-bronze w-12 shrink-0">03</span>
+        <div>
+          <h3 class="font-display font-semibold text-xl text-graphite">Choose your path</h3>
+          <p class="font-body text-slate mt-2 leading-relaxed max-w-2xl">Implement it yourself, bring in someone else, or have us execute it.</p>
+        </div>
+      </div>
+      <div class="flex gap-8 reveal">
+        <span class="font-display font-semibold text-4xl text-bronze w-12 shrink-0">04</span>
+        <div>
+          <h3 class="font-display font-semibold text-xl text-graphite">Small pilot</h3>
+          <p class="font-body text-slate mt-2 leading-relaxed max-w-2xl">If we execute, we start with one narrow workflow, not a giant system.</p>
+        </div>
+      </div>
+      <div class="flex gap-8 reveal">
+        <span class="font-display font-semibold text-4xl text-bronze w-12 shrink-0">05</span>
+        <div>
+          <h3 class="font-display font-semibold text-xl text-graphite">Review, improve, or stop</h3>
+          <p class="font-body text-slate mt-2 leading-relaxed max-w-2xl">We look at what worked, what didn't, and whether it's worth continuing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── EARLY PARTNER ───────── -->
+  <section class="bg-graphite text-bone">
+    <div class="max-w-6xl mx-auto px-6 py-20 md:py-24 grid md:grid-cols-12 gap-10">
+      <div class="md:col-span-5 reveal">
+        <p class="eyebrow eyebrow-dark">Early Partner Program</p>
+        <h2 class="font-display font-semibold text-3xl md:text-4xl leading-tight mt-4">Early partners get 75% of the standard rate, locked in.</h2>
+      </div>
+      <div class="md:col-span-6 md:col-start-7 reveal">
+        <p class="font-body text-bone/80 leading-[1.75] text-lg">
+          We're working with a small number of early partners right now. Your rate is locked at 75% of the standard price for your package, for as long as you keep using the service without interruption. In exchange, we ask for honest feedback, patience with early process refinement, and, if the work is useful, a short testimonial or introduction.
+        </p>
+        <p class="font-body text-bone/50 text-sm mt-6 italic">
+          Prices shown throughout this site are before applicable taxes. If 18% tax applies, it's added separately on the invoice.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── WHAT WE WILL NOT PROMISE ───────── -->
+  <section class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+    <p class="eyebrow reveal">What This Isn't</p>
+    <h2 class="font-display font-semibold text-3xl md:text-4xl text-graphite mt-4 mb-12 reveal">What we will not promise.</h2>
+    <ul class="grid md:grid-cols-2 gap-x-12 gap-y-5 font-body text-slate text-lg leading-relaxed">
+      <li class="reveal flex gap-3"><span class="text-bronze">—</span>We will not promise magic automation.</li>
+      <li class="reveal flex gap-3"><span class="text-bronze">—</span>We will not force AI into workflows where it doesn't belong.</li>
+      <li class="reveal flex gap-3"><span class="text-bronze">—</span>We will not replace your judgment with ours.</li>
+      <li class="reveal flex gap-3"><span class="text-bronze">—</span>We will not start you with a giant system.</li>
+      <li class="reveal flex gap-3"><span class="text-bronze">—</span>We will not pretend every workflow has the same return.</li>
+      <li class="reveal flex gap-3"><span class="text-bronze">—</span>We will not treat the diagnostic audit as a sales pitch for execution.</li>
+    </ul>
+  </section>
+
+  <!-- ───────── FOOTER CTA ───────── -->
+  <section class="bg-brass/10 border-t border-brass/20">
+    <div class="max-w-4xl mx-auto px-6 py-20 text-center reveal">
+      <h2 class="font-display font-semibold text-3xl md:text-4xl text-graphite">Have a workflow that's costing you more time than it should?</h2>
+      <p class="font-body text-slate text-lg mt-4">Book a free 30-60 minute diagnostic call and find out what's actually worth fixing.</p>
+      <a href="https://calendar.app.google/PreoYa98qoiVXfL38" target="_blank" rel="noopener" class="btn-primary inline-block font-medium px-8 py-4 rounded-sm mt-8 shadow-graphite">Book a Free Diagnostic Call</a>
+    </div>
+  </section>
+
+  <!-- ───────── FOOTER ───────── -->
+  <footer class="bg-graphite text-bone/70">
+    <div class="max-w-6xl mx-auto px-6 py-14">
+      <div class="flex flex-col md:flex-row justify-between gap-10">
+        <div>
+          <div class="flex items-center gap-2">
+            <img src="brand_assets/assets/icon-dark.png" alt="SFTech" class="h-8 w-8 rounded-sm">
+            <span class="font-display font-semibold text-lg text-bone">SFTech</span>
+          </div>
+          <p class="font-body text-sm mt-4 max-w-xs">Your Steady Partner in Human-AI Thinking and Execution.</p>
+        </div>
+        <div class="flex flex-wrap gap-x-12 gap-y-4 font-body text-sm">
+          <a href="thinking-partner.html" class="hover:text-brass transition-colors">AI Thinking Partner</a>
+          <a href="workflow-services.html" class="hover:text-brass transition-colors">Workflow Services</a>
+          <a href="about.html" class="hover:text-brass transition-colors">About</a>
+          <a href="contact.html" class="hover:text-brass transition-colors">Contact</a>
+        </div>
+      </div>
+      <div class="rule my-10" style="background: linear-gradient(to right, rgba(247,245,241,0.14), rgba(247,245,241,0.02));"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 font-body text-sm text-bone/50">
+        <p>© 2026 SteadyFrame Technologies. All rights reserved.</p>
+        <p>Know someone who'd benefit from this? Feel free to introduce them.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const revealEls = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('is-visible'), i * 60);
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => io.observe(el));
+  </script>
+</body>
+</html>

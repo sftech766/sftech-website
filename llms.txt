@@ -1,0 +1,15 @@
+# SFTech (SteadyFrame Technologies)
+
+> SFTech is a Human-AI hybrid service. AI Thinking Partner is a strategy/audit layer that identifies where AI is worth using without requiring execution purchase. Human-AI Workflow Services is a done-for-you execution layer where AI drafts and a human reviews, edits, and packages every deliverable. Entry point is a free 30-60 minute AI Workflow Diagnostic Call. Growth is warm-referral led, not cold outreach.
+
+## Pages
+
+- [Home](https://sftech.co.in/index.html): Overview of both service tracks, the "last 20%" positioning, and the early partner program.
+- [AI Thinking Partner](https://sftech.co.in/thinking-partner.html): Strategy/audit track — AI Workflow Audit, AI Opportunity Map, Workflow ROI Review, Automation Readiness Review, Implementation Thinking Partner. Pricing: free diagnostic call, $150-300 Opportunity Map, $500-1,000 Audit + Plan, $300-1,000/month ongoing.
+- [Human-AI Workflow Services](https://sftech.co.in/workflow-services.html): Done-for-you execution track — content repurposing, social media, research briefs, website GEO improvement, and more. Pricing: $150-400 one-time, $400-1,000 pilot, $500-1,500/month recurring, $1,500-3,000+ larger setup. EstateFlow AI is a named, owned proof point.
+- [About](https://sftech.co.in/about.html): Why SFTech exists and how it operates (warm-referral only, human-reviewed, no hype).
+- [Contact](https://sftech.co.in/contact.html): How to book the free AI Workflow Diagnostic Call.
+
+## Notes
+
+All prices are before applicable taxes (18% added separately). Early partners receive 75% of standard rate, locked per package.
