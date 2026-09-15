@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Executive Research Concierge | SFTech</title>
+
+  <link rel="icon" type="image/png" href="brand_assets/assets/icon-main.png">
+
+  <meta name="description" content="Executive Research Concierge by SFTech: Human + AI relationship intelligence dossiers on high-stakes leaders, prospective C-suite clients, and key ecosystem partners. 100% verified, readable in 3 minutes.">
+  <meta property="og:title" content="Executive Research Concierge | SFTech">
+  <meta property="og:description" content="Never walk into a high-stakes conversation unprepared. Verified 3-minute executive briefs powered by human + AI synthesis.">
+  <meta property="og:image" content="https://sftech.co.in/brand_assets/assets/logo-main.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sftech.co.in/research-concierge.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://sftech.co.in/research-concierge.html" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Executive Research Concierge",
+    "provider": { "@type": "ProfessionalService", "name": "SteadyFrame Technologies" },
+    "description": "On-demand executive intelligence dossiers and weekly relationship radar for executive coaches, leadership advisors, and dealmakers.",
+    "offers": [
+      { "@type": "Offer", "name": "Single Dossier Test Flight", "price": "195", "priceCurrency": "USD" },
+      { "@type": "Offer", "name": "VIP Dossier 5-Pack", "price": "695", "priceCurrency": "USD" },
+      { "@type": "Offer", "name": "Executive Relationship Radar (Monthly)", "price": "1450", "priceCurrency": "USD" }
+    ]
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { graphite: '#14181F', slate: '#3A4552', brass: '#B8894D', bronze: '#8A6435', bone: '#F7F5F1', teal: '#4E8C8A' },
+          fontFamily: { display: ['Fraunces', 'serif'], body: ['Inter', 'sans-serif'] },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { background-color: #F7F5F1; font-family: 'Inter', sans-serif; color: #14181F; margin: 0; overflow-x: hidden; }
+    .grain { position: relative; }
+    .grain::after {
+      content: ''; position: absolute; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+      pointer-events: none; z-index: 1;
+    }
+    .shadow-graphite { box-shadow: 0 2px 10px rgba(20,24,31,0.10), 0 12px 32px rgba(20,24,31,0.08); }
+    .shadow-brass { box-shadow: 0 2px 8px rgba(184,137,77,0.16), 0 8px 28px rgba(184,137,77,0.12); }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s cubic-bezier(0.22,1,0.36,1), transform 0.7s cubic-bezier(0.22,1,0.36,1); }
+    .reveal.is-visible { opacity: 1; transform: translateY(0); }
+    .eyebrow { font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: #8A6435; font-weight: 600; }
+    .eyebrow-dark { color: #B8894D; }
+    .rule { height: 1px; background: linear-gradient(to right, rgba(20,24,31,0.14), rgba(20,24,31,0.02)); }
+    a:focus-visible, button:focus-visible { outline: 2px solid #B8894D; outline-offset: 3px; border-radius: 2px; }
+    .nav-link { position: relative; }
+    .nav-link::after { content: ''; position: absolute; left: 0; bottom: -4px; width: 0; height: 1px; background: #B8894D; transition: width 0.28s cubic-bezier(0.22,1,0.36,1); }
+    .nav-link:hover::after { width: 100%; }
+    .nav-bar { transition: transform 0.2s ease, opacity 0.2s ease; }
+    #nav-toggle.nav-open .nav-bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    #nav-toggle.nav-open .nav-bar:nth-child(2) { opacity: 0; }
+    #nav-toggle.nav-open .nav-bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+    .btn-primary { background: #14181F; color: #F7F5F1; transition: transform 0.24s cubic-bezier(0.22,1,0.36,1), background 0.24s ease; }
+    .btn-primary:hover { background: #232934; transform: translateY(-2px); }
+    .btn-primary:active { transform: translateY(0); }
+    .btn-brass { background: #B8894D; color: #14181F; font-weight: 600; transition: transform 0.24s cubic-bezier(0.22,1,0.36,1), background 0.24s ease; }
+    .btn-brass:hover { background: #c5975b; transform: translateY(-2px); }
+    .card-border { border: 1px solid rgba(20,24,31,0.10); }
+    .card-featured { border: 2px solid #B8894D; background: #FFFFFF; }
+  </style>
+</head>
+<body class="grain">
+
+  <!-- HEADER / NAVIGATION -->
+  <header class="sticky top-0 z-50 bg-bone/95 backdrop-blur border-b border-graphite/8">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+      <a href="index.html" class="flex items-center gap-2">
+        <img src="brand_assets/assets/icon-main.png" alt="SFTech" class="h-8 w-8 rounded-sm">
+        <span class="font-display font-semibold text-lg tracking-tight text-graphite">SFTech</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 font-body text-sm text-graphite">
+        <a href="thinking-partner.html" class="nav-link">AI Thinking Partner</a>
+        <a href="workflow-services.html" class="nav-link">Workflow Services</a>
+        <a href="research-concierge.html" class="nav-link text-bronze font-medium">Research Concierge</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="https://calendar.app.google/PreoYa98qoiVXfL38" target="_blank" rel="noopener" class="btn-primary text-sm font-medium px-5 py-2.5 rounded-sm">Book a Diagnostic Call</a>
+        <button type="button" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-mobile-menu" class="md:hidden flex flex-col justify-center items-center gap-1.5 h-9 w-9 shrink-0">
+          <span class="nav-bar block h-0.5 w-6 bg-graphite rounded-full"></span>
+          <span class="nav-bar block h-0.5 w-6 bg-graphite rounded-full"></span>
+          <span class="nav-bar block h-0.5 w-6 bg-graphite rounded-full"></span>
+        </button>
+      </div>
+    </nav>
+    <div id="nav-mobile-menu" class="hidden md:!hidden px-6 pb-4 font-body text-sm text-graphite border-t border-graphite/8">
+      <a href="thinking-partner.html" class="nav-link block py-2">AI Thinking Partner</a>
+      <a href="workflow-services.html" class="nav-link block py-2">Workflow Services</a>
+      <a href="research-concierge.html" class="nav-link block py-2 text-bronze font-medium">Research Concierge</a>
+      <a href="about.html" class="nav-link block py-2">About</a>
+      <a href="contact.html" class="nav-link block py-2">Contact</a>
+    </div>
+  </header>
+
+  <script>
+    (function () {
+      const toggle = document.getElementById('nav-toggle');
+      const menu = document.getElementById('nav-mobile-menu');
+      if (!toggle || !menu) return;
+      toggle.addEventListener('click', () => {
+        const isOpen = !menu.classList.contains('hidden');
+        menu.classList.toggle('hidden');
+        toggle.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', String(!isOpen));
+      });
+      menu.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          menu.classList.add('hidden');
+          toggle.classList.remove('nav-open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+  </script>
+
+  <!-- HERO SECTION -->
+  <section class="max-w-6xl mx-auto px-6 pt-20 pb-16 md:pt-28 md:pb-24">
+    <div class="inline-flex items-center gap-2 px-3 py-1 bg-brass/10 border border-brass/30 rounded-full mb-6 reveal">
+      <span class="h-1.5 w-1.5 rounded-full bg-brass"></span>
+      <span class="eyebrow !text-bronze text-xs">Specialized Service Track</span>
+    </div>
+    
+    <h1 class="font-display font-semibold text-4xl sm:text-5xl md:text-6xl leading-[1.08] tracking-tight text-graphite max-w-4xl reveal">
+      The Executive Intelligence Desk for High-Stakes Coaches.
+    </h1>
+    
+    <p class="font-body text-lg md:text-xl text-slate leading-relaxed mt-6 max-w-3xl reveal">
+      Human + AI relationship research on the people who matter most to your practice. 100% primary-source verified, delivered within 24 hours, and engineered to be read in three minutes before your call.
+    </p>
+
+    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-8 reveal">
+      <a href="#packages" class="btn-primary font-medium px-7 py-3.5 rounded-sm shadow-graphite inline-block text-center w-full sm:w-auto">
+        Explore Dossier Packages
+      </a>
+      <a href="https://calendar.app.google/PreoYa98qoiVXfL38" target="_blank" rel="noopener" class="border border-graphite/20 hover:border-graphite bg-white font-medium px-6 py-3.5 rounded-sm inline-block text-center w-full sm:w-auto transition-colors">
+        Book a Briefing Call
+      </a>
+    </div>
+
+    <!-- Trust Stats -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-12 mt-12 border-t border-graphite/10 reveal">
+      <div>
+        <p class="font-display text-2xl md:text-3xl font-bold text-graphite">25+ Briefs</p>
+        <p class="font-body text-xs md:text-sm text-slate mt-1">Delivered within a live advisory engagement</p>
+      </div>
+      <div>
+        <p class="font-display text-2xl md:text-3xl font-bold text-graphite">3 Minutes</p>
+        <p class="font-body text-xs md:text-sm text-slate mt-1">Reading time for executive brief</p>
+      </div>
+      <div>
+        <p class="font-display text-2xl md:text-3xl font-bold text-graphite">100% Live</p>
+        <p class="font-body text-xs md:text-sm text-slate mt-1">Directly clickable primary sources</p>
+      </div>
+      <div>
+        <p class="font-display text-2xl md:text-3xl font-bold text-graphite">Zero Noise</p>
+        <p class="font-body text-xs md:text-sm text-slate mt-1">Human-cleared against AI hallucinations</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE HIGH-STAKES PROBLEM -->
+  <section class="bg-graphite text-bone py-20 md:py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <p class="eyebrow eyebrow-dark reveal">The Problem With Meeting Prep</p>
+      <h2 class="font-display font-semibold text-3xl md:text-4xl text-bone mt-4 max-w-3xl leading-snug reveal">
+        You are billing $1,000/hour to advise leaders. You shouldn’t be spending 90 minutes hunting down podcasts.
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-8 mt-12">
+        <div class="bg-slate/30 p-8 rounded-sm border border-bone/10 reveal">
+          <div class="w-10 h-10 rounded-full bg-brass/20 flex items-center justify-center font-display font-bold text-brass mb-4">1</div>
+          <h3 class="font-display font-semibold text-xl text-bone mb-3">Google & LinkedIn Are Stale</h3>
+          <p class="font-body text-bone/70 text-sm leading-relaxed">
+            A static LinkedIn bio tells you where someone worked in 2021. It doesn't tell you the board battle they are managing right now, the keynote they gave last Tuesday, or the podcast where they revealed their core frustration.
+          </p>
+        </div>
+
+        <div class="bg-slate/30 p-8 rounded-sm border border-bone/10 reveal">
+          <div class="w-10 h-10 rounded-full bg-brass/20 flex items-center justify-center font-display font-bold text-brass mb-4">2</div>
+          <h3 class="font-display font-semibold text-xl text-bone mb-3">Raw AI Hallucinates</h3>
+          <p class="font-body text-bone/70 text-sm leading-relaxed">
+            ChatGPT and generic LLMs confidently fabricate board seats, invert partnership roles, and invent achievements. Mentioning a fake credential in a high-stakes conversation destroys your executive credibility instantly.
+          </p>
+        </div>
+
+        <div class="bg-slate/30 p-8 rounded-sm border border-bone/10 reveal">
+          <div class="w-10 h-10 rounded-full bg-brass/20 flex items-center justify-center font-display font-bold text-brass mb-4">3</div>
+          <h3 class="font-display font-semibold text-xl text-bone mb-3">Time Poverty</h3>
+          <p class="font-body text-bone/70 text-sm leading-relaxed">
+            Between client sessions, travel, and business development, you have 15 minutes in the taxi or lobby before your meeting. You need an unfair advantage, delivered cleanly to your inbox, ready to consume.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE ANATOMY OF A 3-MINUTE BRIEF (VISUAL DEMO) -->
+  <section class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <p class="eyebrow reveal">The Deliverable</p>
+      <h2 class="font-display font-semibold text-3xl md:text-4xl text-graphite mt-4 reveal">
+        Engineered for instant executive recall.
+      </h2>
+      <p class="font-body text-slate text-base md:text-lg mt-4 reveal">
+        Every dossier is organized into two distinct layers. Layer 1 provides immediate conversational traction. Layer 2 gives you full primary-source verification.
+      </p>
+    </div>
+
+    <!-- Interactive / Sample Preview Card -->
+    <div class="bg-white rounded-md card-border p-6 md:p-10 shadow-graphite max-w-4xl mx-auto reveal">
+      <div class="flex flex-wrap items-center justify-between pb-6 mb-6 border-b border-graphite/10 gap-4">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-wider px-2.5 py-1 bg-graphite text-bone rounded-sm">Layer 1 Sample</span>
+          <h3 class="font-display font-bold text-2xl text-graphite mt-2">Marcus Devereux <span class="text-slate text-base font-normal">(fictional)</span></h3>
+          <p class="text-slate text-sm">Managing Partner, Northbridge Capital Partners • Author, The Founder's Ceiling • Austin, TX / Las Vegas, NV</p>
+        </div>
+        <div class="text-right">
+          <span class="inline-flex items-center gap-1.5 text-xs text-teal font-medium bg-teal/10 px-2.5 py-1 rounded">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            Sample Format &middot; Real Briefs Are Human-Verified
+          </span>
+          <p class="text-xs text-slate mt-1">Reading time: ~2.7 mins</p>
+        </div>
+      </div>
+
+      <div class="mb-6 -mt-2 flex items-start gap-2 bg-brass/10 border border-brass/30 rounded-sm px-3.5 py-2.5">
+        <svg class="w-4 h-4 text-bronze shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        <p class="text-xs text-bronze leading-relaxed">
+          <strong>"Marcus Devereux" is a fictional persona.</strong> This sample exists purely to demonstrate the format, depth, and structure of our dossiers, not an actual research subject or client. On a real engagement, every fact and link below is generated by our AI pipeline, then checked and cleared by a human analyst before it ever reaches you, never sent unreviewed.
+        </p>
+      </div>
+
+      <!-- Sample Content Blocks -->
+      <div class="space-y-6 text-sm font-body text-slate">
+        <div>
+          <h4 class="font-display font-semibold text-base text-graphite mb-1.5">1. One-Line Summary</h4>
+          <p class="leading-relaxed bg-bone/70 p-3.5 rounded border border-graphite/5 text-graphite">
+            Growth-equity investor who scaled and exited a regional fitness-franchise rollup, now building Northbridge Capital Partners with a portfolio of minority-stake cash-flowing businesses ($3M-$100M), combining high-volume media leverage with obsessive unit economics and operational talent architecture.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-display font-semibold text-base text-graphite mb-1.5">2. What He Is Talking About Right Now (Last 60 Days)</h4>
+          <ul class="list-disc list-inside space-y-1 text-slate pl-1">
+            <li><strong>"The Bottleneck is the Founder":</strong> Shifting from personal grit to executive team hiring and compensation structures when scaling beyond $10M.</li>
+            <li><strong>Organic Media as a Strategic Moat:</strong> Why modern enterprise valuation relies on owned audience distribution over escalating paid ad costs.</li>
+            <li><strong>Northbridge Investment Focus:</strong> Prioritizing businesses with high gross margins, low churn, and durable competitive moats.</li>
+            <li><strong>Talent Density & Executive Retention:</strong> Long-form operational frameworks on structuring executive equity to attract tier-1 operators.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-display font-semibold text-base text-graphite mb-1.5">3. Conversational Hooks & Things Worth Opening</h4>
+          <div class="space-y-2">
+            <div class="p-3 bg-bone/40 rounded border border-graphite/5 flex items-start gap-3">
+              <span class="text-brass font-bold text-sm">A.</span>
+              <div>
+                <p class="font-medium text-graphite">Illustrative podcast appearance: "The Truth About Scaling to $100M"</p>
+                <p class="text-xs text-slate mt-0.5">1h 48m listen (Timestamp 42:15). Explains his framework for diagnosing executive burnout vs. incompetence in portfolio CEOs. Essential conversational opener for any leadership advisor. (Sample citation, illustrative only.)</p>
+              </div>
+            </div>
+            <div class="p-3 bg-bone/40 rounded border border-graphite/5 flex items-start gap-3">
+              <span class="text-brass font-bold text-sm">B.</span>
+              <div>
+                <p class="font-medium text-graphite">Illustrative operating memo: The 4 Core Scaling Pillars</p>
+                <p class="text-xs text-slate mt-0.5">7-min read. Lays out the operational governance standards he requires of leadership teams before deploying growth capital. (Sample citation, illustrative only.)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-display font-semibold text-base text-graphite mb-1.5">4. Context & Watch-Out Notes</h4>
+          <p class="leading-relaxed text-xs text-slate">
+            • <strong>Allergic to Fluff:</strong> Severe skepticism toward theoretical consulting jargon, generic coaching exercises, or vanity metrics. Responds only to measurable KPIs, enterprise value, and clear operational leverage.<br>
+            • <strong>Communication Preference:</strong> Highly asynchronous, low-friction, direct updates. Protects calendar ruthlessly.<br>
+            • <strong>Talent Obsession:</strong> Highly engaged by discussions around assessing leadership stamina, executive compensation architecture, and hiring operators who think like owners.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-4 border-t border-graphite/10 flex items-center justify-between text-xs text-slate">
+        <span>+ Layer 2: 38 Clickable Primary-Source Links (YouTube, Podcasts, X, LinkedIn, Press)</span>
+        <span class="font-medium text-graphite">100% Public Web Verified</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="bg-bone py-20 border-y border-graphite/10">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <p class="eyebrow reveal">The Workflow</p>
+        <h2 class="font-display font-semibold text-3xl md:text-4xl text-graphite mt-4 reveal">
+          You give us a name. We do the rest.
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-sm card-border reveal">
+          <div class="font-display font-bold text-2xl text-brass mb-3">01</div>
+          <h3 class="font-display font-semibold text-lg text-graphite mb-2">Submit The Name</h3>
+          <p class="font-body text-slate text-sm leading-relaxed">
+            Send an email or message with your contact’s name, their current company, and any specific angle or meeting context you want explored.
+          </p>
+        </div>
+
+        <div class="bg-white p-8 rounded-sm card-border reveal">
+          <div class="font-display font-bold text-2xl text-brass mb-3">02</div>
+          <h3 class="font-display font-semibold text-lg text-graphite mb-2">Human + AI Synthesis</h3>
+          <p class="font-body text-slate text-sm leading-relaxed">
+            Our multi-engine pipeline scans Perplexity Sonar Pro, OpenAI, and live web archives. A human analyst verifies every link, filters hallucinations, and extracts key hooks.
+          </p>
+        </div>
+
+        <div class="bg-white p-8 rounded-sm card-border reveal">
+          <div class="font-display font-bold text-2xl text-brass mb-3">03</div>
+          <h3 class="font-display font-semibold text-lg text-graphite mb-2">Inbox & Drive Delivery</h3>
+          <p class="font-body text-slate text-sm leading-relaxed">
+            Within 24–48 hours, receive Layer 1 directly in your email body for instant reading on your phone, plus a formatted document in your private Google Drive.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING & PACKAGES -->
+  <section id="packages" class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <p class="eyebrow reveal">Transparent Engagement</p>
+      <h2 class="font-display font-semibold text-3xl md:text-4xl text-graphite mt-4 reveal">
+        Choose how you want to work with us.
+      </h2>
+      <p class="font-body text-slate text-base mt-3 reveal">
+        Start with a single trial dossier or establish an ongoing intelligence desk for your practice.
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-3 gap-8 items-stretch">
+      <!-- Tier 1: Test Flight -->
+      <div class="bg-white rounded-md p-8 card-border flex flex-col justify-between reveal">
+        <div>
+          <p class="eyebrow !text-slate">Front-End Trial</p>
+          <h3 class="font-display font-bold text-2xl text-graphite mt-2">The Test Flight</h3>
+          <p class="text-slate text-sm mt-3 leading-relaxed">
+            Experience the depth of our executive brief on your next high-stakes discovery call or podcast guest.
+          </p>
+          <div class="mt-6 mb-6">
+            <span class="font-display text-4xl font-bold text-graphite">$195</span>
+            <span class="text-slate text-sm">/ single brief</span>
+          </div>
+          <ul class="space-y-3 text-sm font-body text-slate mb-8">
+            <li class="flex items-start gap-2.5">
+              <span class="text-teal font-bold">✓</span> 1 Bespoke Executive Dossier
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-teal font-bold">✓</span> Layer 1 Brief + Layer 2 Appendix
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-teal font-bold">✓</span> 24–48 hour turnaround
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-teal font-bold">✓</span> 100% primary source verified
+            </li>
+            <li class="flex items-start gap-2.5 text-graphite font-medium">
+              <span class="text-brass font-bold">★</span> 100% credited if you upgrade within 14 days
+            </li>
+          </ul>
+        </div>
+        <a href="https://calendar.app.google/PreoYa98qoiVXfL38" target="_blank" rel="noopener" class="btn-primary text-center block w-full py-3 rounded-sm font-medium text-sm">
+          Book & Request Brief
+        </a>
+      </div>
+
+      <!-- Tier 2: 5-Pack (Featured) -->
+      <div class="card-featured rounded-md p-8 flex flex-col justify-between shadow-brass relative reveal">
+        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brass text-graphite text-xs uppercase tracking-wider font-bold px-3 py-1 rounded-full">
+          Most Popular For Coaches
+        </div>
+        <div>
+          <p class="eyebrow !text-bronze mt-2">On-Demand Capacity</p>
+          <h3 class="font-display font-bold text-2xl text-graphite mt-2">VIP Dossier 5-Pack</h3>
+          <p class="text-slate text-sm mt-3 leading-relaxed">
+            Pre-paid intelligence credits on-demand for your upcoming pitches, C-suite onboarding, and key introductions.
+          </p>
+          <div class="mt-6 mb-6">
+            <span class="font-display text-4xl font-bold text-graphite">$695</span>
+            <span class="text-slate text-sm">/ 5 briefs ($139 ea.)</span>
+          </div>
+          <ul class="space-y-3 text-sm font-body text-slate mb-8">
+            <li class="flex items-start gap-2.5">
+              <span class="text-teal font-bold">✓</span> 5 On-Demand Executive Dossiers
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-teal font-bold">✓</span> Valid for 6 months (use anytime)
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-teal font-bold">✓</span> Dedicated private Google Drive folder
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-teal font-bold">✓</span> Priority 24-hour turnaround
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-teal font-bold">✓</span> Direct Slack / WhatsApp request channel
+            </li>
+          </ul>
+        </div>
+        <a href="https://calendar.app.google/PreoYa98qoiVXfL38" target="_blank" rel="noopener" class="btn-brass text-center block w-full py-3 rounded-sm font-semibold text-sm">
+          Secure 5-Pack Credits
+        </a>
+      </div>
+
+      <!-- Tier 3: Relationship Radar -->
+      <div class="bg-white rounded-md p-8 card-border flex flex-col justify-between reveal">
+        <div>
+          <p class="eyebrow !text-slate">Ongoing Retainer</p>
+          <h3 class="font-display font-bold text-2xl text-graphite mt-2">Relationship Radar</h3>
+          <p class="text-slate text-sm mt-3 leading-relaxed">
+            Your private relationship intelligence desk. Never lose track of what your top 20 VIP relationships are doing.
+          </p>
+          <div class="mt-6 mb-6">
+            <span class="font-display text-4xl font-bold text-graphite">$1,450</span>
+            <span class="text-slate text-sm">/ month</span>
+          </div>
+          <ul class="space-y-3 text-sm font-body text-slate mb-8">
+            <li class="flex items-start gap-2.5">
+              <span class="text-teal font-bold">✓</span> Up to 15 Initial Profiles cataloged
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-teal font-bold">✓</span> Weekly Monday Network Radar Digest
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-teal font-bold">✓</span> 3 New On-Demand Briefs included/mo
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-teal font-bold">✓</span> Continuous tracking of moves, podcasts & posts
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-teal font-bold">✓</span> Month-to-month flexibility (cancel anytime)
+            </li>
+          </ul>
+        </div>
+        <a href="https://calendar.app.google/PreoYa98qoiVXfL38" target="_blank" rel="noopener" class="btn-primary text-center block w-full py-3 rounded-sm font-medium text-sm">
+          Discuss Radar Retainer
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="bg-bone py-20 border-t border-graphite/10">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="font-display font-semibold text-3xl text-graphite text-center mb-12 reveal">Frequently Asked Questions</h2>
+
+      <div class="space-y-6">
+        <div class="bg-white p-6 rounded card-border reveal">
+          <h3 class="font-display font-semibold text-lg text-graphite">How is this different from asking Perplexity or ChatGPT?</h3>
+          <p class="font-body text-slate text-sm leading-relaxed mt-2">
+            AI language models generate plausible-sounding text, but they hallucinate facts, confuse different people with identical names, miss paywalled or gated podcast appearances, and provide dead links. Our desk uses frontier AI models for rapid broad discovery, but every claim is cross-referenced, checked against primary sources, and verified by an analyst before you receive it.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded card-border reveal">
+          <h3 class="font-display font-semibold text-lg text-graphite">What information do you need from me to start?</h3>
+          <p class="font-body text-slate text-sm leading-relaxed mt-2">
+            Just the person’s full name and current organization or title. If you have an upcoming meeting, sharing the context (e.g., "Exploring executive coaching for their leadership team" or "Interviewing them on my podcast") helps us surface the exact conversational angles most relevant to your goal.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded card-border reveal">
+          <h3 class="font-display font-semibold text-lg text-graphite">How quickly can I receive a brief?</h3>
+          <p class="font-body text-slate text-sm leading-relaxed mt-2">
+            Standard turnaround is 24 to 48 hours. If you have an urgent, short-notice C-suite meeting booked for the next morning, we offer an expedited 12-hour turnaround for an additional $50 rush fee.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded card-border reveal">
+          <h3 class="font-display font-semibold text-lg text-graphite">What is the Weekly Network Radar in the retainer?</h3>
+          <p class="font-body text-slate text-sm leading-relaxed mt-2">
+            For coaches managing relationships with dozens of board members, high-profile clients, and prospective sponsors, staying informed is impossible. We monitor your selected list of 15–20 key people weekly. Every Monday morning, you get a clean summary of only the notable events that happened in their world over the last 7 days—giving you authentic, timely reasons to reach out and stay top-of-mind.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="bg-graphite text-bone py-20">
+    <div class="max-w-4xl mx-auto px-6 text-center reveal">
+      <p class="eyebrow eyebrow-dark">Never Walk In Blind</p>
+      <h2 class="font-display font-semibold text-3xl md:text-5xl text-bone mt-4 max-w-2xl mx-auto leading-tight">
+        Gain an unfair relationship advantage before your next meeting.
+      </h2>
+      <p class="font-body text-bone/75 text-base md:text-lg mt-6 max-w-xl mx-auto leading-relaxed">
+        Let our human + AI research desk prepare your next 3-minute executive brief. Test us on one conversation and feel the difference in the room.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="https://calendar.app.google/PreoYa98qoiVXfL38" target="_blank" rel="noopener" class="btn-brass px-8 py-3.5 rounded-sm text-sm">
+          Book a Diagnostic Call
+        </a>
+        <a href="mailto:sftech766@gmail.com?subject=Research%20Concierge%20Inquiry" class="text-bone/80 hover:text-bone text-sm underline underline-offset-4 py-3 px-4">
+          Email us directly
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-bone border-t border-graphite/10 py-12">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-slate">
+      <div class="flex items-center gap-2">
+        <img src="brand_assets/assets/icon-main.png" alt="SFTech" class="h-6 w-6 rounded-sm">
+        <span class="font-display font-semibold text-sm text-graphite">SteadyFrame Technologies</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="thinking-partner.html" class="hover:text-graphite">AI Thinking Partner</a>
+        <a href="workflow-services.html" class="hover:text-graphite">Workflow Services</a>
+        <a href="research-concierge.html" class="hover:text-graphite text-bronze font-medium">Research Concierge</a>
+        <a href="about.html" class="hover:text-graphite">About</a>
+        <a href="contact.html" class="hover:text-graphite">Contact</a>
+      </div>
+      <p>© 2026 SteadyFrame Technologies. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
