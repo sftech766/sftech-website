@@ -25,4 +25,19 @@
     <lastmod>2026-07-11</lastmod>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://sftech.co.in/terms.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://sftech.co.in/privacy.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://sftech.co.in/refund-policy.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <priority>0.3</priority>
+  </url>
 </urlset>
