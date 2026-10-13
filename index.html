@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SFTech — Your Steady Partner in Human-AI Thinking and Execution</title>
 
+  <link rel="icon" type="image/svg+xml" href="brand_assets/assets/icon-main.svg">
   <link rel="icon" type="image/png" href="brand_assets/assets/icon-main.png">
 
   <meta name="description" content="SFTech helps people and small teams find where AI is actually worth using, then thinks it through with you or does the work, human-reviewed. Start with a free diagnostic call.">
@@ -38,24 +39,20 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            graphite: '#14181F',
-            slate:    '#3A4552',
-            brass:    '#B8894D',
-            bronze:   '#8A6435',
-            bone:     '#F7F5F1',
-            teal:     '#4E8C8A',
+            graphite: '#011436',
+            slate:    '#526176',
+            brass:    '#004AFF',
+            bronze:   '#004AFF',
+            bone:     '#F4F7FB',
+            teal:     '#004AFF',
           },
           fontFamily: {
-            display: ['Fraunces', 'serif'],
+            display: ['Inter', 'Segoe UI', 'Arial', 'sans-serif'],
             body:    ['Inter', 'sans-serif'],
           },
         }
@@ -64,12 +61,14 @@
   </script>
 
   <style>
+    @font-face { font-family: 'Inter'; src: url('brand_assets/fonts/inter-latin.woff2') format('woff2'); font-weight: 100 900; font-style: normal; font-display: swap; }
+
     *, *::before, *::after { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
-      background-color: #F7F5F1;
+      background-color: #F4F7FB;
       font-family: 'Inter', sans-serif;
-      color: #14181F;
+      color: #011436;
       margin: 0;
       overflow-x: hidden;
     }
@@ -88,14 +87,14 @@
     /* ── Warm-tinted layered shadows ── */
     .shadow-brass {
       box-shadow:
-        0 2px 8px rgba(184,137,77,0.16),
-        0 8px 28px rgba(184,137,77,0.10),
-        0 20px 56px rgba(20,24,31,0.06);
+        0 2px 8px rgba(0,74,255,0.16),
+        0 8px 28px rgba(0,74,255,0.10),
+        0 20px 56px rgba(1,20,54,0.06);
     }
     .shadow-graphite {
       box-shadow:
-        0 2px 10px rgba(20,24,31,0.10),
-        0 12px 32px rgba(20,24,31,0.08);
+        0 2px 10px rgba(1,20,54,0.10),
+        0 12px 32px rgba(1,20,54,0.08);
     }
 
     /* ── Keyframes ── */
@@ -122,18 +121,18 @@
       font-size: 0.75rem;
       letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: #8A6435;
+      color: #004AFF;
       font-weight: 600;
     }
     /* On dark (graphite) backgrounds, the lighter brass reads at 5.7:1 and is used instead. */
-    .eyebrow-dark { color: #B8894D; }
+    .eyebrow-dark { color: #6E9BFF; }
 
     /* ── Rule divider ── */
-    .rule { height: 1px; background: linear-gradient(to right, rgba(20,24,31,0.14), rgba(20,24,31,0.02)); }
+    .rule { height: 1px; background: linear-gradient(to right, rgba(1,20,54,0.14), rgba(1,20,54,0.02)); }
 
     /* ── Focus-visible ── */
     a:focus-visible, button:focus-visible {
-      outline: 2px solid #B8894D;
+      outline: 2px solid #004AFF;
       outline-offset: 3px;
       border-radius: 2px;
     }
@@ -145,7 +144,7 @@
       position: absolute;
       left: 0; bottom: -4px;
       width: 0; height: 1px;
-      background: #B8894D;
+      background: #004AFF;
       transition: width 0.28s cubic-bezier(0.22,1,0.36,1);
     }
     .nav-link:hover::after { width: 100%; }
@@ -159,37 +158,44 @@
     /* ── Card ── */
     .door-card {
       background: #FFFFFF;
-      border: 1px solid rgba(20,24,31,0.08);
+      border: 1px solid rgba(1,20,54,0.08);
       border-radius: 4px;
       transition: transform 0.3s cubic-bezier(0.22,1,0.36,1), box-shadow 0.3s cubic-bezier(0.22,1,0.36,1), border-color 0.3s ease;
     }
     .door-card:hover {
       transform: translateY(-4px);
-      border-color: rgba(184,137,77,0.35);
+      border-color: rgba(0,74,255,0.35);
     }
 
     /* ── Primary CTA button ── */
     .btn-primary {
-      background: #14181F;
-      color: #F7F5F1;
+      background: #011436;
+      color: #F4F7FB;
       transition: transform 0.24s cubic-bezier(0.22,1,0.36,1), box-shadow 0.24s cubic-bezier(0.22,1,0.36,1), background 0.24s ease;
     }
     .btn-primary:hover {
-      background: #23293480;
-      background: #232934;
+      background: #0B1F4580;
+      background: #0B1F45;
       transform: translateY(-2px);
     }
     .btn-primary:active { transform: translateY(0); }
 
     .btn-secondary {
-      border: 1px solid #14181F;
-      color: #14181F;
+      border: 1px solid #011436;
+      color: #011436;
       transition: background 0.24s ease, color 0.24s ease;
     }
     .btn-secondary:hover {
-      background: #14181F;
-      color: #F7F5F1;
+      background: #011436;
+      color: #F4F7FB;
     }
+  
+    /* ── SF Tech v2.0 brand: Quiet Navy #011436, Signal Blue #004AFF, Mist #F4F7FB, Slate #526176, Inter ── */
+    .grain::after { display: none; }
+    .font-display { letter-spacing: -0.03em; }
+    /* Accent tint for text on navy: Signal Blue #004AFF fails contrast on #011436, this tint passes (6.8:1) */
+    .bg-graphite .text-brass, .bg-graphite .text-bronze, .bg-graphite .text-teal, .bg-graphite .hover\:text-brass:hover { color: #6E9BFF; }
+    .bg-graphite a:focus-visible, .bg-graphite button:focus-visible { outline-color: #6E9BFF; }
   </style>
 </head>
 <body class="grain">
@@ -198,8 +204,7 @@
   <header class="sticky top-0 z-50 bg-bone/95 backdrop-blur border-b border-graphite/8">
     <nav class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
       <a href="index.html" class="flex items-center gap-2">
-        <img src="brand_assets/assets/icon-main.png" alt="SFTech" class="h-8 w-8 rounded-sm">
-        <span class="font-display font-semibold text-lg tracking-tight text-graphite">SFTech</span>
+        <img src="brand_assets/assets/logo-main.svg" alt="SFTech" class="h-7 w-auto shrink-0 md:h-9">
       </a>
       <div class="hidden md:flex items-center gap-8 font-body text-sm text-graphite">
         <a href="thinking-partner.html" class="nav-link">AI Thinking Partner</a>
@@ -209,7 +214,7 @@
         <a href="contact.html" class="nav-link">Contact</a>
       </div>
       <div class="flex items-center gap-3">
-        <a href="https://calendar.app.google/PreoYa98qoiVXfL38" target="_blank" rel="noopener" class="btn-primary text-sm font-medium px-5 py-2.5 rounded-sm">Book a Diagnostic Call</a>
+        <a href="https://calendar.app.google/PreoYa98qoiVXfL38" target="_blank" rel="noopener" class="btn-primary whitespace-nowrap text-sm font-medium px-4 sm:px-5 py-2.5 rounded-sm"><span class="hidden sm:inline">Book a Diagnostic Call</span><span class="sm:hidden">Book a Call</span></a>
         <button type="button" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-mobile-menu" class="md:hidden flex flex-col justify-center items-center gap-1.5 h-9 w-9 shrink-0">
           <span class="nav-bar block h-0.5 w-6 bg-graphite rounded-full"></span>
           <span class="nav-bar block h-0.5 w-6 bg-graphite rounded-full"></span>
@@ -405,8 +410,7 @@
       <div class="flex flex-col md:flex-row justify-between gap-10">
         <div>
           <div class="flex items-center gap-2">
-            <img src="brand_assets/assets/icon-dark.png" alt="SFTech" class="h-8 w-8 rounded-sm">
-            <span class="font-display font-semibold text-lg text-bone">SFTech</span>
+            <img src="brand_assets/assets/logo-dark.svg" alt="SFTech" class="h-9 w-auto">
           </div>
           <p class="font-body text-sm mt-4 max-w-xs">Your Steady Partner in Human-AI Thinking and Execution.</p>
         </div>
@@ -418,7 +422,7 @@
           <a href="contact.html" class="hover:text-brass transition-colors">Contact</a>
         </div>
       </div>
-      <div class="rule my-10" style="background: linear-gradient(to right, rgba(247,245,241,0.14), rgba(247,245,241,0.02));"></div>
+      <div class="rule my-10" style="background: linear-gradient(to right, rgba(244,247,251,0.14), rgba(244,247,251,0.02));"></div>
       <div class="flex flex-col md:flex-row justify-between gap-4 font-body text-sm text-bone/50">
         <div class="space-y-2"><p>© 2026 SteadyFrame Technologies. All rights reserved.</p><p class="flex flex-wrap gap-x-5 gap-y-1"><a href="terms.html" class="hover:text-brass transition-colors">Terms</a><a href="privacy.html" class="hover:text-brass transition-colors">Privacy</a><a href="refund-policy.html" class="hover:text-brass transition-colors">Refunds</a></p></div>
         <p>Know someone who'd benefit from this? Feel free to introduce them.</p>

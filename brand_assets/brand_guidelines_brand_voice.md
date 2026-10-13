@@ -8,59 +8,51 @@
 
 ---
 
-## 1. The "Steady Advisory" Color Palette
+## 1. Color Palette (SF Tech v2.0)
 
-SFTech is the parent Human-AI hybrid advisory and execution brand — it needs to read as calmer and more consultative than EstateFlow AI (its flashy, real-estate-specific sub-brand), while still feeling like a related sibling brand, not an unrelated company.
+> **Brand v2.0 applied 13 Oct 2026**, replicating the identity used at partners.sftech.co.in/pramaana-labs. The previous identity ("The Steady Partner": Graphite/Brass/Bone, Fraunces) is archived at git tag `branding-v1-steady-partner` and in `E:\projects\sftech_website_archive\branding-v1-steady-partner-2026-10-13\`. Brand *voice* (Section 4) is unchanged.
 
-| Role | Color | HEX Code | Psychological Impact |
+| Role | Color | HEX Code | Use |
 | :--- | :--- | :--- | :--- |
-| **Primary (Anchor)** | **Graphite Ink** | `#14181F` | Authority, calm, grounded — the "steady" in SteadyFrame. |
-| **Primary (Structure)** | **Slate Steel** | `#3A4552` | Structural, dependable, used for secondary surfaces and borders. |
-| **Accent (Human/Warmth)** | **Warm Brass** | `#B8894D` | The human-judgment accent — craft and warmth, not flashy tech. Used for CTAs and highlights. |
-| **Neutral (Clean)** | **Bone White** | `#F7F5F1` | Crisp, warm-neutral background for reports, pages, and documents. |
-| **Signal (AI/Data)** | **Muted Teal** | `#4E8C8A` | The one AI-adjacent color — used sparingly for data points, small icons, or signal moments only. |
-
-**Do not** use Muted Teal as a dominant color or large background fill — it is a signal accent, matching how EstateFlow AI treats Property Gold as a highlight-only color. Do not substitute EstateFlow's Electric Blue/Cyber Cyan here — the two brands share ownership but must stay visually distinct.
+| **Primary (Ink)** | **Quiet Navy** | `#011436` | Text, dark sections, primary buttons, footer. |
+| **Accent** | **Signal Blue** | `#004AFF` | Links, eyebrows, numbers, highlights, button hover. Passes AA on white and Mist. |
+| **Neutral (Page)** | **Mist** | `#F4F7FB` | Page and section backgrounds (white is also used). |
+| **Muted text** | **Slate** | `#526176` | Body and secondary text on light backgrounds. |
+| **Border** | **Border** | `#D8E0EC` | Dividers and card borders. |
+| **Tint** | **Soft Blue** | `#EAF0FF` | Pale highlight panels. |
+| **On-navy accent** | **Sky tint** | `#6E9BFF` | Accent text on Quiet Navy only (6.8:1). Signal Blue on navy is 3:1 and fails, so use this tint there. Added for the website; not part of the original approved set. |
 
 ---
 
-## 2. Typography Strategy
+## 2. Typography
 
-### **Headline Font: Fraunces (or Playfair Display) — Semibold / Bold**
-- **Characteristics:** An editorial serif with weight and warmth — signals "thinking," not just "tech." Deliberately distinct from EstateFlow's geometric sans (Montserrat), since SFTech's audience (founders, executives, coaches) expects a more consultative register.
-- **Usage:** Logo wordmark (if a wordmark variant is used), page/section headlines, pull quotes.
-
-### **Body Font: Inter (Regular / Medium)**
-- **Characteristics:** Highly legible on all screens. Reused from EstateFlow AI deliberately — no reason to introduce a third font family across BK's brands.
-- **Usage:** Body copy, proposals, emails, page content.
+- **Inter** for everything (headlines, body, UI), self-hosted from `brand_assets/fonts/` (OFL license included). Headlines use tight tracking (about -0.03em).
+- Fallback stack: Inter, Segoe UI, Arial, sans-serif. No serif or decorative faces.
 
 ---
 
 ## 3. Logo Application Rules
 
-**Chosen direction:** SF Monogram — a clean wordmark lockup ("SFTech" over "STEADYFRAME TECHNOLOGIES") with no separate abstract icon. Built in Canva; final assets live in `brand_assets/assets/`.
+**Logo:** SF Tech v2.0, "SF" mark with a blue dot plus "TECH". Navy `#011033` with a `#0455F8` dot. Vector geometry came from the approved v2.0 files; do not redraw.
 
-### Assets
+### Assets (`brand_assets/assets/`)
 
-| Asset | Description | File |
+| Asset | Description | Files |
 | :--- | :--- | :--- |
-| Main logo (light) | Full wordmark, Graphite Ink text on Bone White | `assets/logo-main.png` |
-| Main logo (dark) | Full wordmark, Bone White text on Graphite Ink | `assets/logo-dark.png` |
-| Icon (light) | "SF" only, cropped tight, Graphite Ink on Bone White — for favicon, small square use | `assets/icon-main.png` |
-| Icon (dark) | "SF" only, cropped tight, Bone White on Graphite Ink | `assets/icon-dark.png` |
+| Main logo (light) | Full logo on light backgrounds | `logo-main.svg` (cropped), `logo-main.png` (1200 square, white) |
+| Main logo (dark) | White version for navy backgrounds | `logo-dark.svg`, `logo-dark.png` (1200 square, navy) |
+| Icon (light) | "SF" mark with dot, no "TECH" | `icon-main.svg`, `icon-main.png` (600 square, white) |
+| Icon (dark) | White version | `icon-dark.svg`, `icon-dark.png` (600 square, navy) |
 
 ### Which to Use
-
-- **Full wordmark** (`logo-main.png` / `logo-dark.png`): site header/nav, email signature, footer, any context wide enough for the full "SFTech" + "STEADYFRAME TECHNOLOGIES" lockup.
-- **Icon only** (`icon-main.png` / `icon-dark.png`): favicon, social profile picture, any square slot too small for the full wordmark to stay legible.
-- Choose light vs. dark variant based on background: light variant on Bone White/light backgrounds, dark variant on Graphite Ink/dark backgrounds. Never place the light variant over a dark background or vice versa.
+- **Full logo:** header, footer, email signature, anywhere wide enough.
+- **Icon:** favicon, small square slots, compact footer lines.
+- Light variant on light backgrounds, dark variant on Quiet Navy. Never swap them.
 
 ### Rules
-
-- Minimum clear space: 1× the wordmark's height on all sides, same rule as EstateFlow AI's symbol.
-- Do not resize the icon variant below 32px wide — letterforms become illegible below that.
-- Do not rotate, skew, recolor outside the two approved variants (main/dark), or add drop shadows/glows.
-- Do not reintroduce a separate abstract icon/symbol next to the wordmark — the chosen direction is wordmark-first by design.
+- Clear space of at least the height of the "SF" mark on all sides.
+- Do not rotate, skew, stretch, recolor outside the two variants, or add shadows or glows.
+- Do not add a separate symbol next to the logo.
 
 ---
 
@@ -110,12 +102,12 @@ SFTech is the parent Human-AI hybrid advisory and execution brand — it needs t
 - Do not stretch or distort — always scale proportionally.
 
 ### Colors
-- Do not substitute similar colors (e.g. a generic brown/tan instead of Warm Brass `#B8894D`).
-- Do not use Muted Teal (`#4E8C8A`) as a primary or background color — signal accent only.
-- Do not reuse EstateFlow AI's Electric Blue/Cyber Cyan/Property Gold here — keep the two brands visually distinct.
+- Do not substitute similar colors for Quiet Navy `#011436` or Signal Blue `#004AFF`.
+- Use Signal Blue as text on light backgrounds only; on navy use the Sky tint `#6E9BFF`.
+- Note: v2.0 is closer to EstateFlow AI's navy and blue than v1 was. Keep EstateFlow's cyan and gold out of SFTech material.
 
 ### Typography
-- Do not use fonts other than the approved headline serif and Inter.
+- Do not use fonts other than Inter.
 - Do not use decorative, script, or condensed font variants.
 
 ### Tone

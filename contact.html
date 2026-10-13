@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact — Free AI Workflow Diagnostic Call | SFTech</title>
 
+  <link rel="icon" type="image/svg+xml" href="brand_assets/assets/icon-main.svg">
   <link rel="icon" type="image/png" href="brand_assets/assets/icon-main.png">
 
   <meta name="description" content="Book a free 30-60 minute AI Workflow Diagnostic Call with SFTech. No proposal, no pressure, just a conversation about your workflow.">
@@ -18,50 +19,55 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-
   <script>
     tailwind.config = {
       theme: {
         extend: {
-          colors: { graphite: '#14181F', slate: '#3A4552', brass: '#B8894D', bronze: '#8A6435', bone: '#F7F5F1', teal: '#4E8C8A' },
-          fontFamily: { display: ['Fraunces', 'serif'], body: ['Inter', 'sans-serif'] },
+          colors: { graphite: '#011436', slate: '#526176', brass: '#004AFF', bronze: '#004AFF', bone: '#F4F7FB', teal: '#004AFF' },
+          fontFamily: { display: ['Inter', 'Segoe UI', 'Arial', 'sans-serif'], body: ['Inter', 'sans-serif'] },
         }
       }
     }
   </script>
 
   <style>
+    @font-face { font-family: 'Inter'; src: url('brand_assets/fonts/inter-latin.woff2') format('woff2'); font-weight: 100 900; font-style: normal; font-display: swap; }
+
     *, *::before, *::after { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    body { background-color: #F7F5F1; font-family: 'Inter', sans-serif; color: #14181F; margin: 0; overflow-x: hidden; }
+    body { background-color: #F4F7FB; font-family: 'Inter', sans-serif; color: #011436; margin: 0; overflow-x: hidden; }
     .grain { position: relative; }
     .grain::after {
       content: ''; position: absolute; inset: 0;
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
       pointer-events: none; z-index: 1;
     }
-    .shadow-graphite { box-shadow: 0 2px 10px rgba(20,24,31,0.10), 0 12px 32px rgba(20,24,31,0.08); }
-    .shadow-brass { box-shadow: 0 2px 8px rgba(184,137,77,0.16), 0 8px 28px rgba(184,137,77,0.10); }
+    .shadow-graphite { box-shadow: 0 2px 10px rgba(1,20,54,0.10), 0 12px 32px rgba(1,20,54,0.08); }
+    .shadow-brass { box-shadow: 0 2px 8px rgba(0,74,255,0.16), 0 8px 28px rgba(0,74,255,0.10); }
     .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s cubic-bezier(0.22,1,0.36,1), transform 0.7s cubic-bezier(0.22,1,0.36,1); }
     .reveal.is-visible { opacity: 1; transform: translateY(0); }
-    .eyebrow { font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: #8A6435; font-weight: 600; }
-    .eyebrow-dark { color: #B8894D; }
-    .rule { height: 1px; background: linear-gradient(to right, rgba(20,24,31,0.14), rgba(20,24,31,0.02)); }
-    a:focus-visible, button:focus-visible { outline: 2px solid #B8894D; outline-offset: 3px; border-radius: 2px; }
+    .eyebrow { font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: #004AFF; font-weight: 600; }
+    .eyebrow-dark { color: #6E9BFF; }
+    .rule { height: 1px; background: linear-gradient(to right, rgba(1,20,54,0.14), rgba(1,20,54,0.02)); }
+    a:focus-visible, button:focus-visible { outline: 2px solid #004AFF; outline-offset: 3px; border-radius: 2px; }
     .nav-link { position: relative; }
-    .nav-link::after { content: ''; position: absolute; left: 0; bottom: -4px; width: 0; height: 1px; background: #B8894D; transition: width 0.28s cubic-bezier(0.22,1,0.36,1); }
+    .nav-link::after { content: ''; position: absolute; left: 0; bottom: -4px; width: 0; height: 1px; background: #004AFF; transition: width 0.28s cubic-bezier(0.22,1,0.36,1); }
     .nav-link:hover::after { width: 100%; }
     .nav-bar { transition: transform 0.2s ease, opacity 0.2s ease; }
     #nav-toggle.nav-open .nav-bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
     #nav-toggle.nav-open .nav-bar:nth-child(2) { opacity: 0; }
     #nav-toggle.nav-open .nav-bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
-    .btn-primary { background: #14181F; color: #F7F5F1; transition: transform 0.24s cubic-bezier(0.22,1,0.36,1), background 0.24s ease; }
-    .btn-primary:hover { background: #232934; transform: translateY(-2px); }
+    .btn-primary { background: #011436; color: #F4F7FB; transition: transform 0.24s cubic-bezier(0.22,1,0.36,1), background 0.24s ease; }
+    .btn-primary:hover { background: #004AFF; transform: translateY(-2px); }
     .btn-primary:active { transform: translateY(0); }
-    .list-card { background: #FFFFFF; border: 1px solid rgba(20,24,31,0.08); border-radius: 4px; }
+    .list-card { background: #FFFFFF; border: 1px solid rgba(1,20,54,0.08); border-radius: 4px; }
+  
+    /* ── SF Tech v2.0 brand: Quiet Navy #011436, Signal Blue #004AFF, Mist #F4F7FB, Slate #526176, Inter ── */
+    .grain::after { display: none; }
+    .font-display { letter-spacing: -0.03em; }
+    /* Accent tint for text on navy: Signal Blue #004AFF fails contrast on #011436, this tint passes (6.8:1) */
+    .bg-graphite .text-brass, .bg-graphite .text-bronze, .bg-graphite .text-teal, .bg-graphite .hover\:text-brass:hover { color: #6E9BFF; }
+    .bg-graphite a:focus-visible, .bg-graphite button:focus-visible { outline-color: #6E9BFF; }
   </style>
 </head>
 <body class="grain">
@@ -69,8 +75,7 @@
   <header class="sticky top-0 z-50 bg-bone/95 backdrop-blur border-b border-graphite/8">
     <nav class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
       <a href="index.html" class="flex items-center gap-2">
-        <img src="brand_assets/assets/icon-main.png" alt="SFTech" class="h-8 w-8 rounded-sm">
-        <span class="font-display font-semibold text-lg tracking-tight text-graphite">SFTech</span>
+        <img src="brand_assets/assets/logo-main.svg" alt="SFTech" class="h-7 w-auto shrink-0 md:h-9">
       </a>
       <div class="hidden md:flex items-center gap-8 font-body text-sm text-graphite">
         <a href="thinking-partner.html" class="nav-link">AI Thinking Partner</a>
@@ -79,7 +84,7 @@
         <a href="contact.html" class="nav-link text-bronze">Contact</a>
       </div>
       <div class="flex items-center gap-3">
-        <a href="https://calendar.app.google/PreoYa98qoiVXfL38" target="_blank" rel="noopener" class="btn-primary text-sm font-medium px-5 py-2.5 rounded-sm">Book a Diagnostic Call</a>
+        <a href="https://calendar.app.google/PreoYa98qoiVXfL38" target="_blank" rel="noopener" class="btn-primary whitespace-nowrap text-sm font-medium px-4 sm:px-5 py-2.5 rounded-sm"><span class="hidden sm:inline">Book a Diagnostic Call</span><span class="sm:hidden">Book a Call</span></a>
         <button type="button" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-mobile-menu" class="md:hidden flex flex-col justify-center items-center gap-1.5 h-9 w-9 shrink-0">
           <span class="nav-bar block h-0.5 w-6 bg-graphite rounded-full"></span>
           <span class="nav-bar block h-0.5 w-6 bg-graphite rounded-full"></span>
@@ -202,8 +207,7 @@
       <div class="flex flex-col md:flex-row justify-between gap-10">
         <div>
           <div class="flex items-center gap-2">
-            <img src="brand_assets/assets/icon-dark.png" alt="SFTech" class="h-8 w-8 rounded-sm">
-            <span class="font-display font-semibold text-lg text-bone">SFTech</span>
+            <img src="brand_assets/assets/logo-dark.svg" alt="SFTech" class="h-9 w-auto">
           </div>
           <p class="font-body text-sm mt-4 max-w-xs">Your Steady Partner in Human-AI Thinking and Execution.</p>
         </div>
@@ -214,7 +218,7 @@
           <a href="contact.html" class="hover:text-brass transition-colors">Contact</a>
         </div>
       </div>
-      <div class="rule my-10" style="background: linear-gradient(to right, rgba(247,245,241,0.14), rgba(247,245,241,0.02));"></div>
+      <div class="rule my-10" style="background: linear-gradient(to right, rgba(244,247,251,0.14), rgba(244,247,251,0.02));"></div>
       <div class="flex flex-col md:flex-row justify-between gap-4 font-body text-sm text-bone/50">
         <div class="space-y-2"><p>© 2026 SteadyFrame Technologies. All rights reserved.</p><p class="flex flex-wrap gap-x-5 gap-y-1"><a href="terms.html" class="hover:text-brass transition-colors">Terms</a><a href="privacy.html" class="hover:text-brass transition-colors">Privacy</a><a href="refund-policy.html" class="hover:text-brass transition-colors">Refunds</a></p></div>
         <p>Know someone who'd benefit from this? Feel free to introduce them.</p>
